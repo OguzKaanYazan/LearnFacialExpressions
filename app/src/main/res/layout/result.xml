@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/scoreCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/scoreTxt"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="SCORE"
+            android:textColor="#34ac99"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/scoreTxt"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="8/10"
+            android:textColor="#34ac99"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scoreCnt"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="Save Score" />
+
+        <Button
+            android:id="@+id/tryAgain"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/save"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="Try Again"
+
+            />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tryAgain"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="Home" />
+    </RelativeLayout>
+
+</RelativeLayout>

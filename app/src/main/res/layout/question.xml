@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/facialExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_launcher"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+        <TextView
+            android:id="@+id/questionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/img"
+            android:gravity="center"
+            android:text="2/5"
+            android:textColor="#34ac99"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/questionMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="245dp"
+            android:background="@drawable/img"
+            android:gravity="center"
+            android:text="?"
+            android:textColor="#34ac99"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/facialExpression"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="EXCITED" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/option1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="HAPPY"
+
+            />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/option2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="SAD" />
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/option3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/option"
+            android:text="SHY"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>
