@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="10dp"
-    android:layout_margin="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
     android:background="@drawable/border">
     >
     <LinearLayout
@@ -14,7 +15,7 @@
         android:layout_weight="2">
 
         <ImageView
-            android:id="@+id/status_img"
+            android:id="@+id/score_img"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:src="@drawable/bullet"
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="8/10"
             android:textSize="32dp"
-            android:id="@+id/air_quality"
+            android:id="@+id/score_txt"
             android:padding="5dp"
             />
 
@@ -39,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="16.01.2021 13:00"
-            android:id="@+id/date"
+            android:id="@+id/date_txt"
             android:padding="5dp"
             />
 

@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".Game" />
         <activity android:name=".Result" />
+        <activity android:name=".ScoreList" />
     </application>
 
 </manifest>

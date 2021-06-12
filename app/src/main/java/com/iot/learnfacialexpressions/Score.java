@@ -13,4 +13,25 @@ public class Score {
             this.date = date;
         }
 
+        public String getScore(){
+            return this.score;
+        }
+
+        public String getDate(){
+            return this.date;
+        }
+
+        public int getScoreImage(){
+            int scoreInteger = getScoreInteger();
+            if(scoreInteger < 10){
+              return R.drawable.thumbs_down;
+            }else{
+                return R.drawable.thumbsup;
+            }
+        }
+
+        public int getScoreInteger(){
+          return Integer.parseInt(this.score.substring(0, this.score.indexOf('/')));
+        }
+
 }

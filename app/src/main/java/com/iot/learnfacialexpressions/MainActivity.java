@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button newGame;
     private ImageButton bEn,bTr;
+    private Button scores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         newGame = (Button) findViewById(R.id.start);
         newGame.setOnClickListener(v -> startNewGame());
+        scores = (Button) findViewById((R.id.scores));
+        scores.setOnClickListener(v -> navigateScores());
 
         bEn = (ImageButton) findViewById(R.id.en);
         bTr = (ImageButton) findViewById(R.id.tr);
@@ -61,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void startNewGame() {
         Intent intent = new Intent(this, Game.class);
+        startActivity(intent);
+    }
+
+    public void navigateScores(){
+        Intent intent = new Intent(this, ScoreList.class);
         startActivity(intent);
     }
 
