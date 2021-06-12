@@ -8,6 +8,24 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/scoreTxtHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        >
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="TEST HAS FINISHED"
+            android:textColor="#34ac99"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/scoreCnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
