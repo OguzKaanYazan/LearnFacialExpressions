@@ -1,7 +1,15 @@
 package com.iot.learnfacialexpressions;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Resources;
+import android.os.Build;
+import android.util.Log;
 import android.widget.ImageButton;
 import android.content.res.Configuration;
 import android.content.Intent;
@@ -18,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Locale locale = Locale.getDefault();
+        Log.d("DEFAULT", locale.toString());
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
@@ -35,15 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
-                Locale locale = new Locale("");
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config,
-                        getBaseContext().getResources().getDisplayMetrics());
-                finish();
-                startActivity(getIntent());
+                setLocale(MainActivity.this, "");
+                recreate();
             }
         });
 
@@ -51,15 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
-                Locale locale = new Locale("tr");
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config,
-                        getBaseContext().getResources().getDisplayMetrics());
-                finish();
-                startActivity(getIntent());
+                setLocale(MainActivity.this, "tr");
+                recreate();
             }
         });
     }
@@ -68,4 +63,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Game.class);
         startActivity(intent);
     }
+
+    public static void setLocale(Activity activity, String languageCode) {
+        SharedPreferences sharedPreferences = activity.getSharedPreferences("LANG", Context.MODE_PRIVATE);
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration configuration = resources.getConfiguration();
+        configuration.locale = locale;
+        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("lang", languageCode);
+        editor.commit();
+    }
+
 }
