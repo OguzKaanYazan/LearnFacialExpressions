@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
@@ -23,7 +24,7 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/option"
         android:layout_below="@+id/title"
-        android:text="New Game" />
+        android:text="@string/new_game" />
 
     <Button
         android:id="@+id/admin"
@@ -33,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/option"
-        android:text="Admin Login"
+        android:text="@string/admin_login"
 
         />
 
@@ -45,6 +46,27 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/option"
-        android:text="Scores" />
+        android:text="@string/scores" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/scores"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/en"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/en"/>
+
+        <ImageButton
+            android:id="@+id/tr"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/tr" />
+    </LinearLayout>
 
 </RelativeLayout>

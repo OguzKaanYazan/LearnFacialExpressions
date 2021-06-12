@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">LearnFacialExpressions</string>
+    <string name="language">English</string>
+    <string name="choose_language">Select Language</string>
+    <string name="change_language">Your language is English</string>
+    <string name="score">Score</string>
+    <string name="scores">Scores</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="info">Information</string>
+    <string name="option">Option</string>
+    <string name="question">Question</string>
+    <string name="new_game">New Game</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <!-- Expressions -->
+    <string name="confident">Confident</string>
+    <string name="curious">Curious</string>
+    <string name="pleased">Pleased</string>
+    <string name="peaceful">Peaceful</string>
+    <string name="sleepy">Sleepy</string>
+    <string name="hopeful">Hopeful</string>
+    <string name="excited">Excited</string>
+    <string name="innocent">Innocent</string>
+    <string name="calm">Calm</string>
+    <string name="guilty">Guilty</string>
+    <string name="sad">Sad</string>
+    <string name="happy">Happy</string>
+    <string name="shy">Shy</string>
+    <string name="frightened">Frightened</string>
+    <string name="surprised">Surprised</string>
+    <string name="anger">Angry</string>
+    <string name="tired">Tired</string>
+    <string name="disgusted">Disgusted</string>
+    <string name="disappointed">Disappointed</string>
+    <string name="bored">Bored</string>
+    <string name="ashamed">Ashamed</string>
+    <string name="nervous">Nervous</string>
+    <string name="aggressive">Aggressive</string>
+    <string name="regretful">Regretful</string>
+    <string name="annoyed">Annoyed</string>
+    <string name="negative">Negative</string>
+    <string name="suspicious">Suspicious</string>
+
+
+
+
 </resources>

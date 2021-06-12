@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">LearnFacialExpressions</string>
+    <string name="language">Türkçe</string>
+    <string name="choose_language">Dil Seçiniz</string>
+    <string name="change_language">Diliniz Türkçe</string>
+    <string name="score">Skor</string>
+    <string name="scores">Skorlar</string>
+    <string name="correct">Doğru</string>
+    <string name="wrong">Yanlış</string>
+    <string name="info">Bilgi</string>
+    <string name="option">Seçenek</string>
+    <string name="question">Soru</string>
+    <string name="new_game">Yeni Oyun</string>
+    <string name="admin_login">Yönetici Giriş</string>
+    <string name="email">Eposta</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş</string>
+
+    <!-- Expressions -->
+    <string name="confident">Kendinden Emin</string>
+    <string name="curious">Meraklı</string>
+    <string name="pleased">Memnun</string>
+    <string name="peaceful">Huzurlu</string>
+    <string name="sleepy">Uykulu</string>
+    <string name="hopeful">Umutlu</string>
+    <string name="excited">Heyecanlı</string>
+    <string name="innocent">Masum</string>
+    <string name="calm">Sakin</string>
+    <string name="guilty">Suçlu</string>
+    <string name="sad">Üzgün</string>
+    <string name="happy">Mutlu</string>
+    <string name="shy">Utangaç</string>
+    <string name="frightened">Korkmuş</string>
+    <string name="surprised">Şaşkın</string>
+    <string name="anger">Kızgın</string>
+    <string name="tired">Yorgun</string>
+    <string name="disgusted">Bıkkın</string>
+    <string name="disappointed">Hayal Kırıklığına Uğramış</string>
+    <string name="bored">Sıkılmış</string>
+    <string name="ashamed">Mahcup</string>
+    <string name="nervous">Gergin</string>
+    <string name="aggressive">Agresif</string>
+    <string name="regretful">Pişman</string>
+    <string name="annoyed">Rahatsız Olmuş</string>
+    <string name="negative">Negatif</string>
+    <string name="suspicious">Şüpheli</string>
+
 </resources>
