@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "123572582459",
+    "firebase_url": "https://learn-facial-expressions-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "learn-facial-expressions",
+    "storage_bucket": "learn-facial-expressions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123572582459:android:9cd2446444c9adb845041e",
+        "android_client_info": {
+          "package_name": "com.iot.learnfacialexpressions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123572582459-scrki503sok414o9k9g4u91691af9hbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT4iAhUGmzIxNLURyciB3R3RZcYyeOp3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123572582459-scrki503sok414o9k9g4u91691af9hbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
