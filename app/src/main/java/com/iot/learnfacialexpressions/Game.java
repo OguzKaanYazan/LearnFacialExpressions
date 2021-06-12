@@ -104,14 +104,16 @@ public class Game extends AppCompatActivity {
 
     private ArrayList<File> getQuestions(){
         ArrayList<File> randomFiles = new ArrayList<>();
+        ArrayList<Integer> randoms = new ArrayList<>();
         //RANDOM NUM DAHA ÖNCE ÇEKİLDİYSE BAŞKA RANDOM ÜRET
         for(int i = 0; i < 10; i++){
             Random random = new Random();
             int randomNum = random.nextInt(data.size());
-            while(randomFiles.contains(randomNum) || data.get(randomNum) == null){
+            while(randoms.contains(randomNum) || data.get(randomNum) == null){
                 randomNum = random.nextInt(data.size());
             }
             randomFiles.add(data.get(randomNum));
+            randoms.add(randomNum);
         }
         return randomFiles;
     }
@@ -151,7 +153,7 @@ public class Game extends AppCompatActivity {
         questionNo++;
         questionNoTxt.setText(questionNo+"");
         Picasso.with(Game.this).load(questions.get(questionNo - 1).getFileName()).into(questionImage);
-        setOptions(getRandomOptions(), questions.get(questionNo - 1).getExpression());
+        setOptions(getRandomOptions(questions.get(questionNo - 1).getExpression()), questions.get(questionNo - 1).getExpression());
     }
 
     private void checkAnswer(String answer){
@@ -170,12 +172,14 @@ public class Game extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private ArrayList<Integer> getRandomOptions(){
+    private ArrayList<Integer> getRandomOptions(String correctOpt){
         ArrayList<Integer> selectedOptions = new ArrayList<>();
         Random random = new Random();
+        Log.d("OGUZ", correctOpt);
         for(int i = 0; i < 3; i++){
             int randomOpt = random.nextInt(optionList.size());
-            while(selectedOptions.contains(randomOpt)){
+            Log.d("KAAN", optionList.get(randomOpt));
+            while(selectedOptions.contains(randomOpt) || correctOpt == optionList.get(randomOpt)){
                 randomOpt = random.nextInt(optionList.size());
             }
             selectedOptions.add(randomOpt);
