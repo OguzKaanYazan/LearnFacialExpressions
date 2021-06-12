@@ -19,14 +19,9 @@
     <!-- Expressions -->
     <string name="confident">confident</string>
     <string name="curious">curious</string>
-    <string name="pleased">pleased</string>
     <string name="peaceful">peaceful</string>
     <string name="sleepy">sleepy</string>
-    <string name="hopeful">hopeful</string>
     <string name="excited">excited</string>
-    <string name="innocent">innocent</string>
-    <string name="calm">calm</string>
-    <string name="guilty">guilty</string>
     <string name="sad">sad</string>
     <string name="happy">happy</string>
     <string name="shy">shy</string>
@@ -38,8 +33,5 @@
     <string name="nervous">nervous</string>
     <string name="regretful">regretful</string>
     <string name="suspicious">suspicious</string>
-
-
-
 
 </resources>

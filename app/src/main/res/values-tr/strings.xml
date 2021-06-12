@@ -19,14 +19,9 @@
     <!-- Expressions -->
     <string name="confident">kendinden Emin</string>
     <string name="curious">meraklı</string>
-    <string name="pleased">memnun</string>
     <string name="peaceful">huzurlu</string>
     <string name="sleepy">uykulu</string>
-    <string name="hopeful">umutlu</string>
     <string name="excited">heyecanlı</string>
-    <string name="innocent">masum</string>
-    <string name="calm">sakin</string>
-    <string name="guilty">suçlu</string>
     <string name="sad">üzgün</string>
     <string name="happy">mutlu</string>
     <string name="shy">utangaç</string>
@@ -37,6 +32,6 @@
     <string name="bored">sıkılmış</string>
     <string name="nervous">gergin</string>
     <string name="regretful">pişman</string>
-    <string name="suspicious">şüpheli</string>
+    <string name="suspicious">şüpheci</string>
 
 </resources>
