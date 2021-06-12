@@ -17,33 +17,27 @@
     <string name="login">Login</string>
 
     <!-- Expressions -->
-    <string name="confident">Confident</string>
-    <string name="curious">Curious</string>
-    <string name="pleased">Pleased</string>
-    <string name="peaceful">Peaceful</string>
-    <string name="sleepy">Sleepy</string>
-    <string name="hopeful">Hopeful</string>
-    <string name="excited">Excited</string>
-    <string name="innocent">Innocent</string>
-    <string name="calm">Calm</string>
-    <string name="guilty">Guilty</string>
-    <string name="sad">Sad</string>
-    <string name="happy">Happy</string>
-    <string name="shy">Shy</string>
-    <string name="frightened">Frightened</string>
-    <string name="surprised">Surprised</string>
-    <string name="anger">Angry</string>
-    <string name="tired">Tired</string>
-    <string name="disgusted">Disgusted</string>
-    <string name="disappointed">Disappointed</string>
-    <string name="bored">Bored</string>
-    <string name="ashamed">Ashamed</string>
-    <string name="nervous">Nervous</string>
-    <string name="aggressive">Aggressive</string>
-    <string name="regretful">Regretful</string>
-    <string name="annoyed">Annoyed</string>
-    <string name="negative">Negative</string>
-    <string name="suspicious">Suspicious</string>
+    <string name="confident">confident</string>
+    <string name="curious">curious</string>
+    <string name="pleased">pleased</string>
+    <string name="peaceful">peaceful</string>
+    <string name="sleepy">sleepy</string>
+    <string name="hopeful">hopeful</string>
+    <string name="excited">excited</string>
+    <string name="innocent">innocent</string>
+    <string name="calm">calm</string>
+    <string name="guilty">guilty</string>
+    <string name="sad">sad</string>
+    <string name="happy">happy</string>
+    <string name="shy">shy</string>
+    <string name="frightened">frightened</string>
+    <string name="surprised">surprised</string>
+    <string name="angry">angry</string>
+    <string name="disgusted">disgusted</string>
+    <string name="bored">bored</string>
+    <string name="nervous">nervous</string>
+    <string name="regretful">regretful</string>
+    <string name="suspicious">suspicious</string>
 
 
 
