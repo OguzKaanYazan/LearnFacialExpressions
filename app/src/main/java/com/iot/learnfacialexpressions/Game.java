@@ -174,16 +174,16 @@ public class Game extends AppCompatActivity {
 
     private ArrayList<Integer> getRandomOptions(String correctOpt){
         ArrayList<Integer> selectedOptions = new ArrayList<>();
+        selectedOptions.add(optionList.indexOf(correctOpt));
         Random random = new Random();
-        Log.d("OGUZ", correctOpt);
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < 4; i++){
             int randomOpt = random.nextInt(optionList.size());
-            Log.d("KAAN", optionList.get(randomOpt));
-            while(selectedOptions.contains(randomOpt) || correctOpt == optionList.get(randomOpt)){
+            while(selectedOptions.contains(randomOpt)){
                 randomOpt = random.nextInt(optionList.size());
             }
             selectedOptions.add(randomOpt);
         }
+        selectedOptions.remove(0);
         return selectedOptions;
     }
 
