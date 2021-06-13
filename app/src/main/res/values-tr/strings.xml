@@ -34,4 +34,42 @@
     <string name="regretful">pişman</string>
     <string name="suspicious">şüpheci</string>
 
+    <string-array name="expression_array">
+        <item name="confident">kendinden emin</item>
+        <item name="curious">meraklı</item>
+        <item name="peaceful">huzurlu</item>
+        <item name="sleepy">uykulu</item>
+        <item name="excited">heyecanlı</item>
+        <item name="sad">üzgün</item>
+        <item name="happy">mutlu</item>
+        <item name="shy">utangaç</item>
+        <item name="frightened">korkmuş</item>
+        <item name="surprised">şaşkın</item>
+        <item name="angry">kızgın</item>
+        <item name="disgusted">iğrenmiş</item>
+        <item name="bored">sıkılmış</item>
+        <item name="nervous">gergin</item>
+        <item name="regretful">pişman</item>
+        <item name="suspicious">şüpheci</item>
+    </string-array>
+
+    <string-array name="expressions_EN">
+        <item name="confident">confident</item>
+        <item name="curious">curious</item>
+        <item name="peaceful">peaceful</item>
+        <item name="sleepy">sleepy</item>
+        <item name="excited">excited</item>
+        <item name="sad">sad</item>
+        <item name="happy">happy</item>
+        <item name="shy">shy</item>
+        <item name="frightened">frightened</item>
+        <item name="surprised">surprised</item>
+        <item name="angry">angry</item>
+        <item name="disgusted">disgusted</item>
+        <item name="bored">bored</item>
+        <item name="nervous">nervous</item>
+        <item name="regretful">regretful</item>
+        <item name="suspicious">suspicious</item>
+    </string-array>
+
 </resources>

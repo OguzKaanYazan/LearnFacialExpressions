@@ -1,15 +1,11 @@
 package com.iot.learnfacialexpressions;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.os.Build;
-import android.util.Log;
 import android.widget.ImageButton;
 import android.content.res.Configuration;
 import android.content.Intent;
@@ -22,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
     private Button newGame;
     private ImageButton bEn,bTr;
     private Button scores;
+    private Button adminLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Locale locale = Locale.getDefault();
-        Log.d("DEFAULT", locale.toString());
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
@@ -39,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         newGame.setOnClickListener(v -> startNewGame());
         scores = (Button) findViewById((R.id.scores));
         scores.setOnClickListener(v -> navigateScores());
+        adminLogin = (Button) findViewById(R.id.admin);
+        adminLogin.setOnClickListener(v -> navigateAdminScreen());
 
         bEn = (ImageButton) findViewById(R.id.en);
         bTr = (ImageButton) findViewById(R.id.tr);
@@ -69,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void navigateScores(){
         Intent intent = new Intent(this, ScoreList.class);
+        startActivity(intent);
+    }
+
+    public void navigateAdminScreen(){
+        Intent intent = new Intent(this, FileUpload.class);
         startActivity(intent);
     }
 

@@ -34,4 +34,42 @@
     <string name="regretful">regretful</string>
     <string name="suspicious">suspicious</string>
 
+    <string-array name="expression_array">
+        <item name="confident">confident</item>
+        <item name="curious">curious</item>
+        <item name="peaceful">peaceful</item>
+        <item name="sleepy">sleepy</item>
+        <item name="excited">excited</item>
+        <item name="sad">sad</item>
+        <item name="happy">happy</item>
+        <item name="shy">shy</item>
+        <item name="frightened">frightened</item>
+        <item name="surprised">surprised</item>
+        <item name="angry">angry</item>
+        <item name="disgusted">disgusted</item>
+        <item name="bored">bored</item>
+        <item name="nervous">nervous</item>
+        <item name="regretful">regretful</item>
+        <item name="suspicious">suspicious</item>
+    </string-array>
+
+    <string-array name="expressions_EN">
+        <item name="confident">confident</item>
+        <item name="curious">curious</item>
+        <item name="peaceful">peaceful</item>
+        <item name="sleepy">sleepy</item>
+        <item name="excited">excited</item>
+        <item name="sad">sad</item>
+        <item name="happy">happy</item>
+        <item name="shy">shy</item>
+        <item name="frightened">frightened</item>
+        <item name="surprised">surprised</item>
+        <item name="angry">angry</item>
+        <item name="disgusted">disgusted</item>
+        <item name="bored">bored</item>
+        <item name="nervous">nervous</item>
+        <item name="regretful">regretful</item>
+        <item name="suspicious">suspicious</item>
+    </string-array>
+
 </resources>
