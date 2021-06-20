@@ -1,5 +1,6 @@
 package com.iot.learnfacialexpressions;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
@@ -26,6 +27,10 @@ public class Result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result);
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.setTitle(R.string.result);
+        }
         score = findViewById(R.id.score);
         score.setText(getIntent().getStringExtra("SCORE"));
 

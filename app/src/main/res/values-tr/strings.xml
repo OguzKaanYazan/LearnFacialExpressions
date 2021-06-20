@@ -22,6 +22,9 @@
     <string name="next">Sonraki Soru</string>
     <string name="upload">Yükle</string>
     <string name="select_image">Resim Seç</string>
+    <string name="learn_expressions">Yüz İfadelerini Öğren</string>
+    <string name="result">Sonuç</string>
+
     <!-- Expressions -->
     <string name="confident">kendinden Emin</string>
     <string name="curious">meraklı</string>

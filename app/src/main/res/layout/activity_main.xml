@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/title"
         android:layout_width="325dp"
-        android:layout_height="279dp"
+        android:layout_height="250dp"
         android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
@@ -19,7 +19,7 @@
     <Button
         android:id="@+id/start"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="@drawable/option"
@@ -29,7 +29,7 @@
     <Button
         android:id="@+id/admin"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/start"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -41,17 +41,27 @@
     <Button
         android:id="@+id/scores"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/admin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/option"
         android:text="@string/scores" />
 
+    <Button
+        android:id="@+id/learnExpressions"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/scores"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/option"
+        android:text="@string/learn_expressions" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_below="@+id/scores"
+        android:layout_below="@+id/learnExpressions"
         android:layout_marginTop="30dip"
         android:orientation="horizontal"
         android:gravity="center">

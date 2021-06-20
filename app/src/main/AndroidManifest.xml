@@ -20,6 +20,8 @@
         <activity android:name=".Result" />
         <activity android:name=".ScoreList" />
         <activity android:name=".FileUpload" />
+        <activity android:name=".LearnExpressions" />
+
     </application>
 
 </manifest>

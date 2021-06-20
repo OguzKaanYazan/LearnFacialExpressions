@@ -23,7 +23,7 @@ public class Score {
 
         public int getScoreImage(){
             int scoreInteger = getScoreInteger();
-            if(scoreInteger < 10){
+            if(scoreInteger < 5){
               return R.drawable.thumbs_down;
             }else{
                 return R.drawable.thumbsup;

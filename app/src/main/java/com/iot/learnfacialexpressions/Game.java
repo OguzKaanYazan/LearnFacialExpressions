@@ -1,5 +1,6 @@
 package com.iot.learnfacialexpressions;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -49,6 +50,10 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question);
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.hide();
+        }
         questionNoTxt = findViewById(R.id.questionNo);
         questionNoTxt.setText(questionNo+"");
         questionImage = findViewById(R.id.questionImage);

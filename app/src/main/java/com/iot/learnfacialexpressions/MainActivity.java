@@ -1,7 +1,9 @@
 package com.iot.learnfacialexpressions;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton bEn,bTr;
     private Button scores;
     private Button adminLogin;
+    private Button learnExpressions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +33,18 @@ public class MainActivity extends AppCompatActivity {
         getBaseContext().getResources().updateConfiguration(config,
                 getBaseContext().getResources().getDisplayMetrics());
         setContentView(R.layout.activity_main);
-
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.hide();
+        }
         newGame = (Button) findViewById(R.id.start);
         newGame.setOnClickListener(v -> startNewGame());
         scores = (Button) findViewById((R.id.scores));
         scores.setOnClickListener(v -> navigateScores());
         adminLogin = (Button) findViewById(R.id.admin);
         adminLogin.setOnClickListener(v -> navigateAdminScreen());
+        learnExpressions = (Button) findViewById(R.id.learnExpressions);
+        learnExpressions.setOnClickListener(v -> navigateLearnExpressions());
 
         bEn = (ImageButton) findViewById(R.id.en);
         bTr = (ImageButton) findViewById(R.id.tr);
@@ -72,6 +80,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void navigateAdminScreen(){
         Intent intent = new Intent(this, FileUpload.class);
+        startActivity(intent);
+    }
+
+    public void navigateLearnExpressions(){
+        Intent intent = new Intent(this, LearnExpressions.class);
         startActivity(intent);
     }
 

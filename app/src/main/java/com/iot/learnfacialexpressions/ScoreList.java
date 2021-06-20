@@ -3,6 +3,8 @@ package com.iot.learnfacialexpressions;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,6 +22,10 @@ public class ScoreList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.score_list);
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.setTitle(R.string.scores);
+        }
         getScores();
     }
 
