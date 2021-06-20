@@ -34,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/option"
-        android:text="@string/admin_login"
+        android:text="@string/upload_image"
 
         />
 

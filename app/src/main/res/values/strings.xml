@@ -11,11 +11,17 @@
     <string name="option">Option</string>
     <string name="question">Question</string>
     <string name="new_game">New Game</string>
-    <string name="admin_login">Admin Login</string>
+    <string name="upload_image">Upload Image</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-
+    <string name="save_score">Save Score</string>
+    <string name="try_again">Try Again</string>
+    <string name="home">Home</string>
+    <string name="test_finish">Test Has Finished!</string>
+    <string name="next">Next</string>
+    <string name="upload">Upload</string>
+    <string name="select_image">Select Image</string>
     <!-- Expressions -->
     <string name="confident">confident</string>
     <string name="curious">curious</string>

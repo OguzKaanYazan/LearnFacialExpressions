@@ -21,7 +21,7 @@
 
         <Button
             android:id="@+id/btnChoose"
-            android:text="Select Image"
+            android:text="@string/select_image"
             android:layout_weight="1"
             android:layout_width="300dp"
             android:layout_centerHorizontal="true"
@@ -31,7 +31,7 @@
 
         <Button
             android:id="@+id/btnUpload"
-            android:text="Upload"
+            android:text="@string/upload"
             android:layout_weight="1"
             android:layout_width="300dp"
             android:layout_marginTop="20dp"
