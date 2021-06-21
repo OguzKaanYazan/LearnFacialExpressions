@@ -37,17 +37,6 @@
             android:textColor="#34ac99"
             android:textSize="22sp" />
 
-        <TextView
-            android:id="@+id/questionMark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="245dp"
-            android:background="@drawable/img"
-            android:gravity="center"
-            android:text="?"
-            android:textColor="#34ac99"
-            android:textSize="25sp" />
     </RelativeLayout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
